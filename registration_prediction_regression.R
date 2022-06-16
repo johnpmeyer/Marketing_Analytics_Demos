@@ -81,7 +81,7 @@ sse_model5 = sqrt(sum((preds_model5 - test[, 3])**2))
 
 make_seasonal_adjustment = function(adj) {
   
-  #Note: this is dummy monthly data. For the real process, I'd determine this through Holt-Winters Multiplicative Modeling.
+  #Note: this is dummy monthly data. For the real process, I determined this through Holt-Winters Multiplicative Modeling.
   
   seasonal = c(0.9, 0.85, 0.98,
                1.01, 0.65, 0.69, 
